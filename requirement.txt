@@ -1,0 +1,25 @@
+# ================================
+# PathFinder - Project Dependencies
+# ================================
+
+# Backend
+Flask
+Flask-CORS
+python-dotenv
+
+# AI / Machine Learning
+numpy
+pandas
+scikit-learn
+
+# AI / LLM
+google-generativeai
+
+# Database
+SQLAlchemy
+
+# Testing
+pytest
+
+# Utilities
+requests
