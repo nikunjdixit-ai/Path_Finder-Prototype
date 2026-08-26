@@ -1,0 +1,326 @@
+{
+  "skills": {
+    "python": {
+      "name": "Python",
+      "category": "Programming",
+      "description": "General-purpose programming language widely used in software development, data science, AI and automation.",
+      "difficulty": "beginner",
+      "prerequisites": []
+    },
+    "javascript": {
+      "name": "JavaScript",
+      "category": "Programming",
+      "description": "Programming language used to build interactive web applications and modern frontend and backend systems.",
+      "difficulty": "beginner",
+      "prerequisites": []
+    },
+    "java": {
+      "name": "Java",
+      "category": "Programming",
+      "description": "Object-oriented programming language commonly used for enterprise applications and backend development.",
+      "difficulty": "beginner",
+      "prerequisites": []
+    },
+    "cpp": {
+      "name": "C++",
+      "category": "Programming",
+      "description": "High-performance programming language used in systems programming, competitive programming and performance-intensive applications.",
+      "difficulty": "intermediate",
+      "prerequisites": []
+    },
+
+    "data_structures": {
+      "name": "Data Structures",
+      "category": "Computer Science",
+      "description": "Knowledge of arrays, linked lists, stacks, queues, trees, graphs and other structures used to organize data.",
+      "difficulty": "intermediate",
+      "prerequisites": ["python"]
+    },
+    "algorithms": {
+      "name": "Algorithms",
+      "category": "Computer Science",
+      "description": "Ability to design and analyze algorithms for solving computational problems efficiently.",
+      "difficulty": "intermediate",
+      "prerequisites": ["data_structures"]
+    },
+    "object_oriented_programming": {
+      "name": "Object-Oriented Programming",
+      "category": "Programming",
+      "description": "Programming paradigm based on classes, objects, inheritance, encapsulation and polymorphism.",
+      "difficulty": "intermediate",
+      "prerequisites": ["python"]
+    },
+
+    "html": {
+      "name": "HTML",
+      "category": "Web Development",
+      "description": "Markup language used to structure content on web pages.",
+      "difficulty": "beginner",
+      "prerequisites": []
+    },
+    "css": {
+      "name": "CSS",
+      "category": "Web Development",
+      "description": "Styling language used to design and format web pages.",
+      "difficulty": "beginner",
+      "prerequisites": ["html"]
+    },
+    "react": {
+      "name": "React",
+      "category": "Frontend Development",
+      "description": "JavaScript library used to build component-based user interfaces.",
+      "difficulty": "intermediate",
+      "prerequisites": ["javascript", "html", "css"]
+    },
+    "nodejs": {
+      "name": "Node.js",
+      "category": "Backend Development",
+      "description": "JavaScript runtime used to build scalable server-side applications.",
+      "difficulty": "intermediate",
+      "prerequisites": ["javascript"]
+    },
+    "rest_api": {
+      "name": "REST APIs",
+      "category": "Backend Development",
+      "description": "Understanding of RESTful services used for communication between frontend and backend systems.",
+      "difficulty": "intermediate",
+      "prerequisites": ["javascript"]
+    },
+
+    "sql": {
+      "name": "SQL",
+      "category": "Database",
+      "description": "Language used to query, manipulate and manage relational databases.",
+      "difficulty": "beginner",
+      "prerequisites": []
+    },
+    "database_design": {
+      "name": "Database Design",
+      "category": "Database",
+      "description": "Ability to design normalized and efficient database schemas and relationships.",
+      "difficulty": "intermediate",
+      "prerequisites": ["sql"]
+    },
+
+    "numpy": {
+      "name": "NumPy",
+      "category": "Data Science",
+      "description": "Python library for numerical computing and multidimensional array operations.",
+      "difficulty": "beginner",
+      "prerequisites": ["python"]
+    },
+    "pandas": {
+      "name": "Pandas",
+      "category": "Data Science",
+      "description": "Python library used for data manipulation, cleaning and analysis.",
+      "difficulty": "beginner",
+      "prerequisites": ["python", "numpy"]
+    },
+    "data_visualization": {
+      "name": "Data Visualization",
+      "category": "Data Science",
+      "description": "Ability to communicate data insights using charts, graphs and visual analytics.",
+      "difficulty": "beginner",
+      "prerequisites": ["pandas"]
+    },
+    "statistics": {
+      "name": "Statistics",
+      "category": "Mathematics",
+      "description": "Understanding of probability, distributions, hypothesis testing, correlation and statistical inference.",
+      "difficulty": "intermediate",
+      "prerequisites": []
+    },
+    "probability": {
+      "name": "Probability",
+      "category": "Mathematics",
+      "description": "Understanding of probability concepts used in statistics and machine learning.",
+      "difficulty": "intermediate",
+      "prerequisites": []
+    },
+    "linear_algebra": {
+      "name": "Linear Algebra",
+      "category": "Mathematics",
+      "description": "Understanding of vectors, matrices and mathematical operations used in machine learning.",
+      "difficulty": "intermediate",
+      "prerequisites": []
+    },
+
+    "machine_learning": {
+      "name": "Machine Learning",
+      "category": "Artificial Intelligence",
+      "description": "Ability to develop models that learn patterns from data for prediction and decision-making.",
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "python",
+        "numpy",
+        "pandas",
+        "statistics",
+        "linear_algebra"
+      ]
+    },
+    "supervised_learning": {
+      "name": "Supervised Learning",
+      "category": "Machine Learning",
+      "description": "Machine learning approach using labeled data for tasks such as classification and regression.",
+      "difficulty": "intermediate",
+      "prerequisites": ["machine_learning"]
+    },
+    "unsupervised_learning": {
+      "name": "Unsupervised Learning",
+      "category": "Machine Learning",
+      "description": "Machine learning approach that discovers patterns and structures in unlabeled data.",
+      "difficulty": "intermediate",
+      "prerequisites": ["machine_learning"]
+    },
+    "feature_engineering": {
+      "name": "Feature Engineering",
+      "category": "Machine Learning",
+      "description": "Process of creating, transforming and selecting useful features for machine learning models.",
+      "difficulty": "intermediate",
+      "prerequisites": ["pandas", "machine_learning"]
+    },
+    "model_evaluation": {
+      "name": "Model Evaluation",
+      "category": "Machine Learning",
+      "description": "Ability to evaluate machine learning models using appropriate metrics and validation techniques.",
+      "difficulty": "intermediate",
+      "prerequisites": ["machine_learning"]
+    },
+
+    "deep_learning": {
+      "name": "Deep Learning",
+      "category": "Artificial Intelligence",
+      "description": "Machine learning approach based on neural networks with multiple layers.",
+      "difficulty": "advanced",
+      "prerequisites": [
+        "machine_learning",
+        "linear_algebra"
+      ]
+    },
+    "neural_networks": {
+      "name": "Neural Networks",
+      "category": "Deep Learning",
+      "description": "Understanding and implementation of artificial neural networks.",
+      "difficulty": "advanced",
+      "prerequisites": ["machine_learning", "linear_algebra"]
+    },
+    "computer_vision": {
+      "name": "Computer Vision",
+      "category": "Artificial Intelligence",
+      "description": "Techniques for enabling computers to understand and analyze images and visual data.",
+      "difficulty": "advanced",
+      "prerequisites": ["deep_learning"]
+    },
+    "natural_language_processing": {
+      "name": "Natural Language Processing",
+      "category": "Artificial Intelligence",
+      "description": "Techniques for processing, understanding and generating human language using computational methods.",
+      "difficulty": "advanced",
+      "prerequisites": ["deep_learning"]
+    },
+
+    "generative_ai": {
+      "name": "Generative AI",
+      "category": "Artificial Intelligence",
+      "description": "AI techniques used to generate text, images, code and other forms of content.",
+      "difficulty": "advanced",
+      "prerequisites": ["machine_learning", "deep_learning"]
+    },
+    "llm": {
+      "name": "Large Language Models",
+      "category": "Generative AI",
+      "description": "Understanding and application of large language models for natural language tasks and AI applications.",
+      "difficulty": "advanced",
+      "prerequisites": [
+        "natural_language_processing",
+        "generative_ai"
+      ]
+    },
+    "prompt_engineering": {
+      "name": "Prompt Engineering",
+      "category": "Generative AI",
+      "description": "Designing effective prompts to guide large language models toward useful and reliable outputs.",
+      "difficulty": "intermediate",
+      "prerequisites": ["llm"]
+    },
+
+    "git": {
+      "name": "Git",
+      "category": "Developer Tools",
+      "description": "Distributed version control system used to track code changes and collaborate on software projects.",
+      "difficulty": "beginner",
+      "prerequisites": []
+    },
+    "github": {
+      "name": "GitHub",
+      "category": "Developer Tools",
+      "description": "Platform for hosting Git repositories and collaborating on software development projects.",
+      "difficulty": "beginner",
+      "prerequisites": ["git"]
+    },
+    "linux": {
+      "name": "Linux",
+      "category": "Systems",
+      "description": "Operating system environment commonly used for servers, cloud computing and development.",
+      "difficulty": "intermediate",
+      "prerequisites": []
+    },
+
+    "cloud_computing": {
+      "name": "Cloud Computing",
+      "category": "Cloud",
+      "description": "Understanding of cloud infrastructure, services, deployment and scalable computing resources.",
+      "difficulty": "intermediate",
+      "prerequisites": ["linux"]
+    },
+    "docker": {
+      "name": "Docker",
+      "category": "DevOps",
+      "description": "Containerization technology used to package applications and their dependencies.",
+      "difficulty": "intermediate",
+      "prerequisites": ["linux"]
+    },
+    "kubernetes": {
+      "name": "Kubernetes",
+      "category": "DevOps",
+      "description": "Container orchestration platform used to deploy and manage containerized applications.",
+      "difficulty": "advanced",
+      "prerequisites": ["docker", "cloud_computing"]
+    },
+    "ci_cd": {
+      "name": "CI/CD",
+      "category": "DevOps",
+      "description": "Practices for automating software integration, testing and deployment pipelines.",
+      "difficulty": "intermediate",
+      "prerequisites": ["git", "docker"]
+    },
+
+    "cybersecurity_fundamentals": {
+      "name": "Cybersecurity Fundamentals",
+      "category": "Cybersecurity",
+      "description": "Fundamental concepts related to security threats, vulnerabilities, authentication and protection mechanisms.",
+      "difficulty": "beginner",
+      "prerequisites": ["linux"]
+    },
+    "network_security": {
+      "name": "Network Security",
+      "category": "Cybersecurity",
+      "description": "Techniques for protecting networks, systems and communications from unauthorized access and attacks.",
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "cybersecurity_fundamentals",
+        "linux"
+      ]
+    },
+    "ethical_hacking": {
+      "name": "Ethical Hacking",
+      "category": "Cybersecurity",
+      "description": "Authorized security testing techniques used to identify and assess vulnerabilities.",
+      "difficulty": "advanced",
+      "prerequisites": [
+        "network_security",
+        "cybersecurity_fundamentals"
+      ]
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "careers": {
+    "ai_engineer": {
+      "name": "AI Engineer",
+      "category": "Artificial Intelligence",
+      "description": "Designs and develops AI-powered applications and intelligent systems.",
+      "required_skills": [
+        "python",
+        "numpy",
+        "pandas",
+        "statistics",
+        "machine_learning",
+        "deep_learning",
+        "natural_language_processing",
+        "generative_ai",
+        "llm",
+        "prompt_engineering"
+      ]
+    },
+    "machine_learning_engineer": {
+      "name": "Machine Learning Engineer",
+      "category": "Artificial Intelligence",
+      "description": "Builds, trains, evaluates and deploys machine learning models.",
+      "required_skills": [
+        "python",
+        "numpy",
+        "pandas",
+        "statistics",
+        "linear_algebra",
+        "machine_learning",
+        "supervised_learning",
+        "unsupervised_learning",
+        "feature_engineering",
+        "model_evaluation",
+        "deep_learning",
+        "docker"
+      ]
+    },
+    "data_scientist": {
+      "name": "Data Scientist",
+      "category": "Data Science",
+      "description": "Uses statistics, programming and machine learning to extract insights and build predictive models from data.",
+      "required_skills": [
+        "python",
+        "numpy",
+        "pandas",
+        "statistics",
+        "probability",
+        "linear_algebra",
+        "data_visualization",
+        "machine_learning",
+        "supervised_learning",
+        "unsupervised_learning",
+        "feature_engineering",
+        "model_evaluation"
+      ]
+    },
+    "data_analyst": {
+      "name": "Data Analyst",
+      "category": "Data Science",
+      "description": "Analyzes data and communicates insights to support business and technical decision-making.",
+      "required_skills": [
+        "python",
+        "sql",
+        "pandas",
+        "statistics",
+        "data_visualization"
+      ]
+    },
+    "full_stack_developer": {
+      "name": "Full Stack Developer",
+      "category": "Software Development",
+      "description": "Develops both frontend and backend components of web applications.",
+      "required_skills": [
+        "html",
+        "css",
+        "javascript",
+        "react",
+        "nodejs",
+        "rest_api",
+        "sql",
+        "database_design",
+        "git",
+        "github"
+      ]
+    },
+    "frontend_developer": {
+      "name": "Frontend Developer",
+      "category": "Software Development",
+      "description": "Builds user interfaces and interactive web applications.",
+      "required_skills": [
+        "html",
+        "css",
+        "javascript",
+        "react",
+        "git",
+        "github"
+      ]
+    },
+    "backend_developer": {
+      "name": "Backend Developer",
+      "category": "Software Development",
+      "description": "Develops server-side applications, APIs and database-driven systems.",
+      "required_skills": [
+        "python",
+        "object_oriented_programming",
+        "rest_api",
+        "sql",
+        "database_design",
+        "git",
+        "github",
+        "linux"
+      ]
+    },
+    "cybersecurity_analyst": {
+      "name": "Cybersecurity Analyst",
+      "category": "Cybersecurity",
+      "description": "Monitors systems, identifies security threats and helps protect applications and networks.",
+      "required_skills": [
+        "linux",
+        "cybersecurity_fundamentals",
+        "network_security",
+        "ethical_hacking",
+        "python",
+        "git"
+      ]
+    },
+    "cloud_engineer": {
+      "name": "Cloud Engineer",
+      "category": "Cloud Computing",
+      "description": "Designs, deploys and manages scalable cloud infrastructure and services.",
+      "required_skills": [
+        "linux",
+        "cloud_computing",
+        "docker",
+        "kubernetes",
+        "git",
+        "python"
+      ]
+    },
+    "devops_engineer": {
+      "name": "DevOps Engineer",
+      "category": "DevOps",
+      "description": "Automates software development, testing, deployment and infrastructure management.",
+      "required_skills": [
+        "linux",
+        "git",
+        "cloud_computing",
+        "docker",
+        "kubernetes",
+        "ci_cd",
+        "python"
+      ]
+    }
+  }
+}

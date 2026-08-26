@@ -1,0 +1,172 @@
+{
+  "projects": [
+    {
+      "id": "project_python_automation",
+      "title": "Python Automation Toolkit",
+      "skill": "python",
+      "level": "beginner",
+      "estimated_hours": 8,
+      "prerequisites": ["python"],
+      "type": "project"
+    },
+    {
+      "id": "project_data_analysis",
+      "title": "Student Performance Data Analysis",
+      "skill": "pandas",
+      "level": "beginner",
+      "estimated_hours": 10,
+      "prerequisites": ["python", "numpy", "pandas"],
+      "type": "project"
+    },
+    {
+      "id": "project_sales_dashboard",
+      "title": "Sales Analytics Dashboard",
+      "skill": "data_visualization",
+      "level": "beginner",
+      "estimated_hours": 12,
+      "prerequisites": ["pandas", "data_visualization"],
+      "type": "project"
+    },
+    {
+      "id": "project_ml_prediction",
+      "title": "House Price Prediction",
+      "skill": "machine_learning",
+      "level": "intermediate",
+      "estimated_hours": 20,
+      "prerequisites": [
+        "python",
+        "pandas",
+        "statistics",
+        "machine_learning"
+      ],
+      "type": "project"
+    },
+    {
+      "id": "project_customer_segmentation",
+      "title": "Customer Segmentation System",
+      "skill": "unsupervised_learning",
+      "level": "intermediate",
+      "estimated_hours": 20,
+      "prerequisites": [
+        "pandas",
+        "machine_learning",
+        "unsupervised_learning"
+      ],
+      "type": "project"
+    },
+    {
+      "id": "project_image_classifier",
+      "title": "Image Classification System",
+      "skill": "computer_vision",
+      "level": "advanced",
+      "estimated_hours": 30,
+      "prerequisites": [
+        "deep_learning",
+        "computer_vision"
+      ],
+      "type": "project"
+    },
+    {
+      "id": "project_sentiment_analysis",
+      "title": "Sentiment Analysis Application",
+      "skill": "natural_language_processing",
+      "level": "advanced",
+      "estimated_hours": 25,
+      "prerequisites": [
+        "machine_learning",
+        "natural_language_processing"
+      ],
+      "type": "project"
+    },
+    {
+      "id": "project_rag_assistant",
+      "title": "Document Question Answering Assistant",
+      "skill": "llm",
+      "level": "advanced",
+      "estimated_hours": 30,
+      "prerequisites": [
+        "natural_language_processing",
+        "generative_ai",
+        "llm"
+      ],
+      "type": "project"
+    },
+    {
+      "id": "project_react_app",
+      "title": "Interactive React Web Application",
+      "skill": "react",
+      "level": "intermediate",
+      "estimated_hours": 20,
+      "prerequisites": [
+        "html",
+        "css",
+        "javascript",
+        "react"
+      ],
+      "type": "project"
+    },
+    {
+      "id": "project_rest_api",
+      "title": "REST API Backend",
+      "skill": "rest_api",
+      "level": "intermediate",
+      "estimated_hours": 18,
+      "prerequisites": [
+        "python",
+        "rest_api",
+        "sql"
+      ],
+      "type": "project"
+    },
+    {
+      "id": "project_docker_deployment",
+      "title": "Containerized Web Application",
+      "skill": "docker",
+      "level": "intermediate",
+      "estimated_hours": 15,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "type": "project"
+    },
+    {
+      "id": "project_devops_pipeline",
+      "title": "Automated CI/CD Pipeline",
+      "skill": "ci_cd",
+      "level": "advanced",
+      "estimated_hours": 20,
+      "prerequisites": [
+        "git",
+        "docker",
+        "ci_cd"
+      ],
+      "type": "project"
+    },
+    {
+      "id": "project_security_audit",
+      "title": "Web Application Security Assessment",
+      "skill": "ethical_hacking",
+      "level": "advanced",
+      "estimated_hours": 20,
+      "prerequisites": [
+        "cybersecurity_fundamentals",
+        "network_security",
+        "ethical_hacking"
+      ],
+      "type": "project"
+    },
+    {
+      "id": "project_cloud_deployment",
+      "title": "Cloud Application Deployment",
+      "skill": "cloud_computing",
+      "level": "intermediate",
+      "estimated_hours": 20,
+      "prerequisites": [
+        "linux",
+        "cloud_computing"
+      ],
+      "type": "project"
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "courses": [
+    {
+      "id": "course_python_basics",
+      "title": "Python Programming Fundamentals",
+      "skill": "python",
+      "level": "beginner",
+      "duration_hours": 20,
+      "prerequisites": [],
+      "type": "course"
+    },
+    {
+      "id": "course_sql_basics",
+      "title": "SQL and Database Fundamentals",
+      "skill": "sql",
+      "level": "beginner",
+      "duration_hours": 15,
+      "prerequisites": [],
+      "type": "course"
+    },
+    {
+      "id": "course_git",
+      "title": "Git and GitHub Fundamentals",
+      "skill": "git",
+      "level": "beginner",
+      "duration_hours": 8,
+      "prerequisites": [],
+      "type": "course"
+    },
+    {
+      "id": "course_html_css",
+      "title": "HTML and CSS Web Development",
+      "skill": "html",
+      "level": "beginner",
+      "duration_hours": 15,
+      "prerequisites": [],
+      "type": "course"
+    },
+    {
+      "id": "course_javascript",
+      "title": "Modern JavaScript Fundamentals",
+      "skill": "javascript",
+      "level": "beginner",
+      "duration_hours": 20,
+      "prerequisites": ["html", "css"],
+      "type": "course"
+    },
+    {
+      "id": "course_react",
+      "title": "React Frontend Development",
+      "skill": "react",
+      "level": "intermediate",
+      "duration_hours": 25,
+      "prerequisites": ["javascript", "html", "css"],
+      "type": "course"
+    },
+    {
+      "id": "course_nodejs",
+      "title": "Node.js Backend Development",
+      "skill": "nodejs",
+      "level": "intermediate",
+      "duration_hours": 25,
+      "prerequisites": ["javascript"],
+      "type": "course"
+    },
+    {
+      "id": "course_rest_api",
+      "title": "REST API Development",
+      "skill": "rest_api",
+      "level": "intermediate",
+      "duration_hours": 12,
+      "prerequisites": ["javascript"],
+      "type": "course"
+    },
+    {
+      "id": "course_numpy",
+      "title": "NumPy for Data Science",
+      "skill": "numpy",
+      "level": "beginner",
+      "duration_hours": 8,
+      "prerequisites": ["python"],
+      "type": "course"
+    },
+    {
+      "id": "course_pandas",
+      "title": "Pandas for Data Analysis",
+      "skill": "pandas",
+      "level": "beginner",
+      "duration_hours": 12,
+      "prerequisites": ["python", "numpy"],
+      "type": "course"
+    },
+    {
+      "id": "course_statistics",
+      "title": "Statistics and Probability for Data Science",
+      "skill": "statistics",
+      "level": "intermediate",
+      "duration_hours": 20,
+      "prerequisites": [],
+      "type": "course"
+    },
+    {
+      "id": "course_linear_algebra",
+      "title": "Linear Algebra for Machine Learning",
+      "skill": "linear_algebra",
+      "level": "intermediate",
+      "duration_hours": 15,
+      "prerequisites": [],
+      "type": "course"
+    },
+    {
+      "id": "course_data_visualization",
+      "title": "Data Visualization with Python",
+      "skill": "data_visualization",
+      "level": "beginner",
+      "duration_hours": 12,
+      "prerequisites": ["pandas"],
+      "type": "course"
+    },
+    {
+      "id": "course_machine_learning",
+      "title": "Machine Learning Fundamentals",
+      "skill": "machine_learning",
+      "level": "intermediate",
+      "duration_hours": 30,
+      "prerequisites": [
+        "python",
+        "numpy",
+        "pandas",
+        "statistics",
+        "linear_algebra"
+      ],
+      "type": "course"
+    },
+    {
+      "id": "course_supervised_learning",
+      "title": "Supervised Machine Learning",
+      "skill": "supervised_learning",
+      "level": "intermediate",
+      "duration_hours": 20,
+      "prerequisites": ["machine_learning"],
+      "type": "course"
+    },
+    {
+      "id": "course_unsupervised_learning",
+      "title": "Unsupervised Machine Learning",
+      "skill": "unsupervised_learning",
+      "level": "intermediate",
+      "duration_hours": 18,
+      "prerequisites": ["machine_learning"],
+      "type": "course"
+    },
+    {
+      "id": "course_feature_engineering",
+      "title": "Feature Engineering",
+      "skill": "feature_engineering",
+      "level": "intermediate",
+      "duration_hours": 15,
+      "prerequisites": ["pandas", "machine_learning"],
+      "type": "course"
+    },
+    {
+      "id": "course_model_evaluation",
+      "title": "Machine Learning Model Evaluation",
+      "skill": "model_evaluation",
+      "level": "intermediate",
+      "duration_hours": 12,
+      "prerequisites": ["machine_learning"],
+      "type": "course"
+    },
+    {
+      "id": "course_deep_learning",
+      "title": "Deep Learning Fundamentals",
+      "skill": "deep_learning",
+      "level": "advanced",
+      "duration_hours": 35,
+      "prerequisites": ["machine_learning", "linear_algebra"],
+      "type": "course"
+    },
+    {
+      "id": "course_computer_vision",
+      "title": "Computer Vision with Deep Learning",
+      "skill": "computer_vision",
+      "level": "advanced",
+      "duration_hours": 30,
+      "prerequisites": ["deep_learning"],
+      "type": "course"
+    },
+    {
+      "id": "course_nlp",
+      "title": "Natural Language Processing",
+      "skill": "natural_language_processing",
+      "level": "advanced",
+      "duration_hours": 30,
+      "prerequisites": ["deep_learning"],
+      "type": "course"
+    },
+    {
+      "id": "course_generative_ai",
+      "title": "Generative AI Fundamentals",
+      "skill": "generative_ai",
+      "level": "advanced",
+      "duration_hours": 20,
+      "prerequisites": ["machine_learning", "deep_learning"],
+      "type": "course"
+    },
+    {
+      "id": "course_llm",
+      "title": "Large Language Models",
+      "skill": "llm",
+      "level": "advanced",
+      "duration_hours": 25,
+      "prerequisites": ["natural_language_processing", "generative_ai"],
+      "type": "course"
+    },
+    {
+      "id": "course_prompt_engineering",
+      "title": "Prompt Engineering",
+      "skill": "prompt_engineering",
+      "level": "intermediate",
+      "duration_hours": 10,
+      "prerequisites": ["llm"],
+      "type": "course"
+    },
+    {
+      "id": "course_linux",
+      "title": "Linux Fundamentals",
+      "skill": "linux",
+      "level": "beginner",
+      "duration_hours": 15,
+      "prerequisites": [],
+      "type": "course"
+    },
+    {
+      "id": "course_cloud",
+      "title": "Cloud Computing Fundamentals",
+      "skill": "cloud_computing",
+      "level": "intermediate",
+      "duration_hours": 20,
+      "prerequisites": ["linux"],
+      "type": "course"
+    },
+    {
+      "id": "course_docker",
+      "title": "Docker and Containerization",
+      "skill": "docker",
+      "level": "intermediate",
+      "duration_hours": 15,
+      "prerequisites": ["linux"],
+      "type": "course"
+    },
+    {
+      "id": "course_kubernetes",
+      "title": "Kubernetes Fundamentals",
+      "skill": "kubernetes",
+      "level": "advanced",
+      "duration_hours": 25,
+      "prerequisites": ["docker", "cloud_computing"],
+      "type": "course"
+    },
+    {
+      "id": "course_cicd",
+      "title": "CI/CD and DevOps Automation",
+      "skill": "ci_cd",
+      "level": "intermediate",
+      "duration_hours": 18,
+      "prerequisites": ["git", "docker"],
+      "type": "course"
+    },
+    {
+      "id": "course_cybersecurity",
+      "title": "Cybersecurity Fundamentals",
+      "skill": "cybersecurity_fundamentals",
+      "level": "beginner",
+      "duration_hours": 20,
+      "prerequisites": ["linux"],
+      "type": "course"
+    },
+    {
+      "id": "course_network_security",
+      "title": "Network Security",
+      "skill": "network_security",
+      "level": "intermediate",
+      "duration_hours": 20,
+      "prerequisites": ["cybersecurity_fundamentals", "linux"],
+      "type": "course"
+    },
+    {
+      "id": "course_ethical_hacking",
+      "title": "Ethical Hacking Fundamentals",
+      "skill": "ethical_hacking",
+      "level": "advanced",
+      "duration_hours": 25,
+      "prerequisites": ["network_security"],
+      "type": "course"
+    }
+  ]
+}

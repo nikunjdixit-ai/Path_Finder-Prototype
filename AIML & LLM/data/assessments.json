@@ -1,0 +1,112 @@
+{
+  "assessments": [
+    {
+      "id": "assessment_python",
+      "title": "Python Fundamentals Assessment",
+      "skill": "python",
+      "level": "beginner",
+      "question_count": 10,
+      "passing_score": 70,
+      "type": "quiz"
+    },
+    {
+      "id": "assessment_sql",
+      "title": "SQL Fundamentals Assessment",
+      "skill": "sql",
+      "level": "beginner",
+      "question_count": 10,
+      "passing_score": 70,
+      "type": "quiz"
+    },
+    {
+      "id": "assessment_data_analysis",
+      "title": "Data Analysis Assessment",
+      "skill": "pandas",
+      "level": "beginner",
+      "question_count": 10,
+      "passing_score": 70,
+      "type": "quiz"
+    },
+    {
+      "id": "assessment_statistics",
+      "title": "Statistics for Data Science Assessment",
+      "skill": "statistics",
+      "level": "intermediate",
+      "question_count": 15,
+      "passing_score": 70,
+      "type": "quiz"
+    },
+    {
+      "id": "assessment_machine_learning",
+      "title": "Machine Learning Fundamentals Assessment",
+      "skill": "machine_learning",
+      "level": "intermediate",
+      "question_count": 15,
+      "passing_score": 70,
+      "type": "quiz"
+    },
+    {
+      "id": "assessment_deep_learning",
+      "title": "Deep Learning Assessment",
+      "skill": "deep_learning",
+      "level": "advanced",
+      "question_count": 15,
+      "passing_score": 70,
+      "type": "quiz"
+    },
+    {
+      "id": "assessment_nlp",
+      "title": "Natural Language Processing Assessment",
+      "skill": "natural_language_processing",
+      "level": "advanced",
+      "question_count": 15,
+      "passing_score": 70,
+      "type": "quiz"
+    },
+    {
+      "id": "assessment_web",
+      "title": "Web Development Fundamentals Assessment",
+      "skill": "javascript",
+      "level": "beginner",
+      "question_count": 15,
+      "passing_score": 70,
+      "type": "quiz"
+    },
+    {
+      "id": "assessment_backend",
+      "title": "Backend Development Assessment",
+      "skill": "rest_api",
+      "level": "intermediate",
+      "question_count": 15,
+      "passing_score": 70,
+      "type": "quiz"
+    },
+    {
+      "id": "assessment_cybersecurity",
+      "title": "Cybersecurity Fundamentals Assessment",
+      "skill": "cybersecurity_fundamentals",
+      "level": "beginner",
+      "question_count": 15,
+      "passing_score": 70,
+      "type": "quiz"
+    },
+    {
+      "id": "assessment_cloud",
+      "title": "Cloud Computing Fundamentals Assessment",
+      "skill": "cloud_computing",
+      "level": "intermediate",
+      "question_count": 15,
+      "passing_score": 70,
+      "type": "quiz"
+    },
+    {
+      "id": "assessment_devops",
+      "title": "DevOps Fundamentals Assessment",
+      "skill": "ci_cd",
+      "level": "intermediate",
+      "question_count": 15,
+      "passing_score": 70,
+      "type": "quiz"
+    }
+  ]
+}
