@@ -20,37 +20,30 @@ from ai.explanation_engine import (
     print_explanations
 )
 
+from ai.feedback_adapter import (
+    process_feedback,
+    print_feedback_adaptation
+)
+
 
 def main():
 
-    print(
-        "\n" + "=" * 60
-    )
-
-    print(
-        "        PATHFINDER - PERSONALIZED LEARNING AI"
-    )
-
-    print(
-        "=" * 60
-    )
+    print("\n" + "=" * 60)
+    print("        PATHFINDER - PERSONALIZED LEARNING AI")
+    print("=" * 60)
 
     user_input = input(
         "\nTell me about yourself, "
         "your skills, interests and career goal:\n> "
     )
 
-    print(
-        "\n[1/5] Analyzing learner profile..."
-    )
+    print("\n[1/6] Analyzing learner profile...")
 
     learner_profile = analyze_profile(
         user_input
     )
 
-    print(
-        "\n--- Learner Profile ---"
-    )
+    print("\n--- Learner Profile ---")
 
     print(
         f"Goal: "
@@ -72,9 +65,7 @@ def main():
         f"{learner_profile['interests']}"
     )
 
-    print(
-        "\n[2/5] Analyzing skill gaps..."
-    )
+    print("\n[2/6] Analyzing skill gaps...")
 
     skill_gap_report = analyze_skill_gap(
         learner_profile
@@ -85,7 +76,7 @@ def main():
     )
 
     print(
-        "\n[3/5] Generating personalized recommendations..."
+        "\n[3/6] Generating personalized recommendations..."
     )
 
     recommendations = generate_recommendations(
@@ -98,7 +89,7 @@ def main():
     )
 
     print(
-        "\n[4/5] Generating personalized learning path..."
+        "\n[4/6] Generating personalized learning path..."
     )
 
     learning_path = generate_learning_path(
@@ -112,7 +103,7 @@ def main():
     )
 
     print(
-        "\n[5/5] Explaining recommendations..."
+        "\n[5/6] Explaining recommendations..."
     )
 
     explained_recommendations = (
@@ -125,6 +116,25 @@ def main():
 
     print_explanations(
         explained_recommendations
+    )
+
+    print(
+        "\n[6/6] Learner Feedback & Adaptation"
+    )
+
+    feedback = input(
+        "\nHow are you finding your learning path?\n> "
+    )
+
+    feedback_result = process_feedback(
+        feedback=feedback,
+        learning_path=learning_path,
+        current_skills=learner_profile["skills"],
+        completed_skills=[]
+    )
+
+    print_feedback_adaptation(
+        feedback_result
     )
 
 
