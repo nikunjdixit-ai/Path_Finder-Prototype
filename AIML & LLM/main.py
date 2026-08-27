@@ -15,29 +15,66 @@ from ai.path_generator import (
     print_learning_path
 )
 
+from ai.explanation_engine import (
+    explain_recommendations,
+    print_explanations
+)
+
 
 def main():
 
-    print("\n" + "=" * 60)
-    print("        PATHFINDER - PERSONALIZED LEARNING AI")
-    print("=" * 60)
-
-    user_input = input(
-        "\nTell me about yourself, your skills, interests and career goal:\n> "
+    print(
+        "\n" + "=" * 60
     )
 
-    print("\n[1/4] Analyzing learner profile...")
+    print(
+        "        PATHFINDER - PERSONALIZED LEARNING AI"
+    )
 
-    learner_profile = analyze_profile(user_input)
+    print(
+        "=" * 60
+    )
 
-    print("\n--- Learner Profile ---")
+    user_input = input(
+        "\nTell me about yourself, "
+        "your skills, interests and career goal:\n> "
+    )
 
-    print(f"Goal: {learner_profile['goal']}")
-    print(f"Experience: {learner_profile['experience_level']}")
-    print(f"Skills: {learner_profile['skills']}")
-    print(f"Interests: {learner_profile['interests']}")
+    print(
+        "\n[1/5] Analyzing learner profile..."
+    )
 
-    print("\n[2/4] Analyzing skill gaps...")
+    learner_profile = analyze_profile(
+        user_input
+    )
+
+    print(
+        "\n--- Learner Profile ---"
+    )
+
+    print(
+        f"Goal: "
+        f"{learner_profile['goal']}"
+    )
+
+    print(
+        f"Experience: "
+        f"{learner_profile['experience_level']}"
+    )
+
+    print(
+        f"Skills: "
+        f"{learner_profile['skills']}"
+    )
+
+    print(
+        f"Interests: "
+        f"{learner_profile['interests']}"
+    )
+
+    print(
+        "\n[2/5] Analyzing skill gaps..."
+    )
 
     skill_gap_report = analyze_skill_gap(
         learner_profile
@@ -46,7 +83,10 @@ def main():
     print_skill_gap_report(
         skill_gap_report
     )
-    print("\n[3/4] Generating personalized recommendations...")
+
+    print(
+        "\n[3/5] Generating personalized recommendations..."
+    )
 
     recommendations = generate_recommendations(
         learner_profile,
@@ -57,7 +97,9 @@ def main():
         recommendations
     )
 
-    print("\n[4/4] Generating personalized learning path...")
+    print(
+        "\n[4/5] Generating personalized learning path..."
+    )
 
     learning_path = generate_learning_path(
         learner_profile,
@@ -69,5 +111,23 @@ def main():
         learning_path
     )
 
+    print(
+        "\n[5/5] Explaining recommendations..."
+    )
+
+    explained_recommendations = (
+        explain_recommendations(
+            learner_profile,
+            skill_gap_report,
+            recommendations
+        )
+    )
+
+    print_explanations(
+        explained_recommendations
+    )
+
+
 if __name__ == "__main__":
+
     main()
