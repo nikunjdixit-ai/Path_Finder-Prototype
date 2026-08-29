@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your learning path | Pathline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="nav__brand" href="index.html">Pathline</a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html#how-it-works">How it works</a>
+      <a href="index.html#learning-approach">Learning approach</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a class="nav__dashboard-link" href="dashboard.html" aria-current="page">Dashboard</a>
+      <button type="button" class="nav__settings-btn" id="settingsOpenBtn" aria-haspopup="dialog" aria-controls="settingsDrawer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+        </svg>
+        <span class="visually-hidden">Settings</span>
+      </button>
+      <button type="button" class="nav__menu-toggle" id="navMenuToggle" aria-expanded="false" aria-controls="navMobilePanel">
+        <span class="visually-hidden">Menu</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav__mobile-panel" id="navMobilePanel" hidden>
+    <div class="container">
+      <a href="index.html#how-it-works">How it works</a>
+      <a href="index.html#learning-approach">Learning approach</a>
+      <a href="dashboard.html" aria-current="page">Dashboard</a>
+    </div>
+  </div>
+</header>
+
+<div class="dashboard-banner" id="dashboardBanner" hidden>
+  <div class="container">
+    <p class="dashboard-banner__text">
+      <strong>Showing an example path.</strong> Build your own from your goals and skills.
+    </p>
+    <a class="rebuild-link" href="index.html">Build my path →</a>
+  </div>
+</div>
+
+<main id="main-content">
+
+  <section class="dashboard-intro container">
+    <span class="dashboard-intro__label">Your Path</span>
+    <h1 class="dashboard-intro__title" id="pathTitle">Loading your path…</h1>
+    <p class="dashboard-intro__summary" id="pathSummary"></p>
+
+    <div class="dashboard-meta">
+      <div class="dashboard-meta__item">
+        <span class="dashboard-meta__label">Estimated length</span>
+        <span class="dashboard-meta__value" id="metaWeeks">—</span>
+      </div>
+      <div class="dashboard-meta__item">
+        <span class="dashboard-meta__label">Weekly time</span>
+        <span class="dashboard-meta__value" id="metaHours">—</span>
+      </div>
+      <div class="dashboard-meta__item">
+        <span class="dashboard-meta__label">Learning style</span>
+        <span class="dashboard-meta__value" id="metaPreference">—</span>
+      </div>
+    </div>
+
+    <div class="progress-overview">
+      <div class="progress-overview__row">
+        <span>Overall progress</span>
+        <span id="progressLabel">0 of 0 modules</span>
+      </div>
+      <div class="progress-overview__track">
+        <div class="progress-overview__fill" id="progressFill" style="width:0%"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dashboard-grid container">
+    <div>
+      <h2 class="section-heading">Modules</h2>
+      <div class="module-list" id="moduleList"></div>
+    </div>
+
+    <aside>
+      <div class="sidebar-card">
+        <h2 class="sidebar-card__title">Skills</h2>
+        <div class="skill-columns">
+          <div class="skill-columns__group">
+            <h4>You already know</h4>
+            <div class="chip-row" id="knownSkills"></div>
+          </div>
+          <div class="skill-columns__group">
+            <h4>This path will build</h4>
+            <div class="chip-row" id="gapSkills"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-card" id="skillGapCard">
+        <h2 class="sidebar-card__title">Skill Gaps &amp; Resources</h2>
+        <p class="skill-gap__intro" id="skillGapIntro"></p>
+        <div class="skill-gap__list" id="skillGapList"></div>
+      </div>
+
+      <div class="sidebar-card">
+        <h2 class="sidebar-card__title">Profile</h2>
+        <div class="skill-columns">
+          <div class="skill-columns__group">
+            <h4>Experience</h4>
+            <p class="dashboard-meta__value" id="profileExperience">—</p>
+          </div>
+          <div class="skill-columns__group">
+            <h4>Goal</h4>
+            <p class="dashboard-meta__value" id="profileGoal">—</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <p class="site-footer__brand">Pathline</p>
+      <p class="site-footer__desc">Personalized learning paths built from your goals, skills and time.</p>
+    </div>
+    <nav class="site-footer__links" aria-label="Footer">
+      <a href="#">Documentation</a>
+      <a href="#">GitHub</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- SETTINGS DRAWER (shared with index.html) -->
+<div class="settings-overlay" id="settingsOverlay" hidden>
+  <div class="settings-drawer" role="dialog" aria-modal="true" aria-labelledby="settingsTitle" id="settingsDrawer">
+    <div class="settings-drawer__header">
+      <h2 class="settings-drawer__title" id="settingsTitle">Settings</h2>
+      <button type="button" class="settings-drawer__close" id="settingsCloseBtn">
+        <span class="visually-hidden">Close settings</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <line x1="4" y1="4" x2="20" y2="20"></line>
+          <line x1="20" y1="4" x2="4" y2="20"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="settings-row">
+      <div>
+        <p class="settings-row__label">Email reminders</p>
+        <p class="settings-row__hint">Weekly summary of your progress</p>
+      </div>
+      <input type="checkbox" id="settingsReminders" checked />
+    </div>
+
+    <button type="button" class="settings-danger" id="resetStateBtn">Reset onboarding data</button>
+  </div>
+</div>
+
+<script src="state.js"></script>
+<script src="data.js"></script>
+<script src="engine.js"></script>
+<script src="goals-data.js"></script>
+<script src="api.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>
